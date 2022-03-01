@@ -1,7 +1,9 @@
 # Jr. Pentester Path
-[x] - Complete\n
-[-] - Not Started\n
-[^] - In Progress: Current Step Appended\n
+  [x] - Complete
+
+  [-] - Not Started
+
+  [^] - In Progress: Current Step Appended
 
 ##### [x] Introduction to Pentesting 
 
