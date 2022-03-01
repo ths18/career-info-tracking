@@ -1,18 +1,18 @@
-#Jr. Pentester Path
+# Jr. Pentester Path
 [x] - Complete
 [-] - Not Started
-[*] - In Progress: Current Step Appended
+[^] - In Progress: Current Step Appended
 
-###[x]Introduction to Pentesting 
+### [x] Introduction to Pentesting 
 
-###[*]Introduction to Web Hacking: CURRENT STEP: AUTHENTICATION BYPASS
+### [^] Introduction to Web Hacking: CURRENT STEP: AUTHENTICATION BYPASS
 
-###[-]Burp Suite
+### [-] Burp Suite
 
-###[-]Network Security
+### [-] Network Security
 
-###[-]Vulnerability Research
+### [-] Vulnerability Research
 
-###[-]Metasploit
+### [-] Metasploit
 
-###[-]Privilege Escalation
+### [-] Privilege Escalation
