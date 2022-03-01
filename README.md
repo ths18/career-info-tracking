@@ -1,5 +1,5 @@
 # career-info-tracking
-* This repository is intended to track my professional progress
+*This repository is intended to track my professional progress
 
 My name is Tyler Stokes, and I am a junior at UWF majoring in Cybersecurity, with a minor in Computer Science and a minor in Criminal Justice.
 I am actively involved with the Cyber Club, and take the role of training newer students who may be afraid to get out of their comfort zone.
