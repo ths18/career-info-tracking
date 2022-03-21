@@ -6,6 +6,6 @@ In my first attepts and weeks of off and on effort, I ran some nmap scans and go
 * Openssh 8.0 Protocol 2.0: Port 22
 * Apache httpd 2.4.37: Port 80 & 443
 
-##Newest Findings: 03/20/2022 ##
+##Newest Findings: 03/20/2022 '\n'
 There are no major vulnerabilities in the apache server that can be exploited to my knowledge. However, this particular version has a known CVE addressing a problem with SCP allowing remote code injection. 
 
