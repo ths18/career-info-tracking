@@ -41,10 +41,12 @@ As many do, I have a love/hate relationship with wordpress. Mine comes a little 
   > wpscan --url http://office.paper/ --enumerate u,ap
 
 This command scans the link and enumerates the users and all installed plugins on the site, as well as the usual Wordpress information.
+
 ![WP_Scan](https://user-images.githubusercontent.com/70218428/162098623-77c4c8b7-22cc-46c1-b9f0-626271ce6c15.png)
 
 
 In this case, we found some very useful information. The wordpress version here was a known-insecure version (5.2.3) with an exploit that allows any user to view draft pages without authenticating by passing a simple query string and accessing the draft directly. In this case, I was able to view a draft page with some nice and sensitive information inside. I used this exploit to craft the URL http://office.paper/?static=1. In my first use, I got the html raw using curl because I had not figured out the very simple vpn issue I listed earlier at this time. 
+
 ![curl_proof](https://user-images.githubusercontent.com/70218428/162098943-a44b0eef-7dc3-4fd9-b343-d43ce38d71cf.png)
 
 
@@ -58,11 +60,15 @@ To cut to the chase, I chose to get access first and do some exploring later. I 
   * _For some reason, I did not take a screenshot of this_
   
 One flag down, one left. Within this home directory, there was a conveniently placed CVE, which turned out to be a perfect privelege escalation script pre-prepared. It was as simple as running python3 CVE-2021-3560.py, which was a polkit exploit.
+  
   ![privesc_start](https://user-images.githubusercontent.com/70218428/162101013-b27aa21f-e3b2-4566-ab6c-a26a12965517.png)
 
+  
 Once this exploit ran, a new super user called 'ahmed' was created. From there it was just as simple as running the command su ahmed, and from there stepping to sudo su, and we were at root! 
+  
   ![privesc_to_root](https://user-images.githubusercontent.com/70218428/162101132-e560cd60-825b-4197-86c1-a04c308c3e91.png)
 
+  
  From there, using cd to the root home directory uncovered the system flag, and with that the machine was defeated!
   ![owned_notif](https://user-images.githubusercontent.com/70218428/162101199-d4de2272-7efc-466e-9ac2-d5f6bee188fd.png)
 
