@@ -8,4 +8,4 @@ Moving forward, I was able to finish this machine relatively quickly. It took me
 
 In the usual fashion, I started this encounter doing some recon. I alwayus start my recon off with a trusty intense scan
 
-  nmap -T4 -A -v 10.10.11.125 
+    nmap -T4 -A -v 10.10.11.125 
