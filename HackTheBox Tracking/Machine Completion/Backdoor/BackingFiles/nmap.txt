@@ -1,0 +1,136 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-04-26 13:51 CDT
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 13:51
+Completed NSE at 13:51, 0.00s elapsed
+Initiating NSE at 13:51
+Completed NSE at 13:51, 0.00s elapsed
+Initiating NSE at 13:51
+Completed NSE at 13:51, 0.00s elapsed
+Initiating Ping Scan at 13:51
+Scanning 10.10.11.125 [2 ports]
+Completed Ping Scan at 13:51, 0.12s elapsed (1 total hosts)
+Initiating Connect Scan at 13:51
+Scanning backdoor.htb (10.10.11.125) [1000 ports]
+Discovered open port 22/tcp on 10.10.11.125
+Discovered open port 80/tcp on 10.10.11.125
+Increasing send delay for 10.10.11.125 from 0 to 5 due to max_successful_tryno increase to 5
+Completed Connect Scan at 13:52, 17.41s elapsed (1000 total ports)
+Initiating Service scan at 13:52
+Scanning 2 services on backdoor.htb (10.10.11.125)
+Completed Service scan at 13:52, 6.43s elapsed (2 services on 1 host)
+NSE: Script scanning 10.10.11.125.
+Initiating NSE at 13:52
+Completed NSE at 13:52, 5.44s elapsed
+Initiating NSE at 13:52
+Completed NSE at 13:52, 0.70s elapsed
+Initiating NSE at 13:52
+Completed NSE at 13:52, 0.00s elapsed
+Nmap scan report for backdoor.htb (10.10.11.125)
+Host is up (0.24s latency).
+Not shown: 998 closed tcp ports (conn-refused)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 b4:de:43:38:46:57:db:4c:21:3b:69:f3:db:3c:62:88 (RSA)
+|   256 aa:c9:fc:21:0f:3e:f4:ec:6b:35:70:26:22:53:ef:66 (ECDSA)
+|_  256 d2:8b:e4:ec:07:61:aa:ca:f8:ec:1c:f8:8c:c1:f6:e1 (ED25519)
+80/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+|_http-title: Backdoor &#8211; Real-Life
+|_http-generator: WordPress 5.8.1
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+Initiating NSE at 13:52
+Completed NSE at 13:52, 0.00s elapsed
+Initiating NSE at 13:52
+Completed NSE at 13:52, 0.00s elapsed
+Initiating NSE at 13:52
+Completed NSE at 13:52, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 30.55 seconds
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-04-26 13:53 CDT
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 13:53
+Completed NSE at 13:53, 0.00s elapsed
+Initiating NSE at 13:53
+Completed NSE at 13:53, 0.00s elapsed
+Initiating NSE at 13:53
+Completed NSE at 13:53, 0.00s elapsed
+Initiating Ping Scan at 13:53
+Scanning 10.10.11.125 [2 ports]
+Completed Ping Scan at 13:53, 0.12s elapsed (1 total hosts)
+Initiating Connect Scan at 13:53
+Scanning backdoor.htb (10.10.11.125) [65535 ports]
+Discovered open port 22/tcp on 10.10.11.125
+Discovered open port 80/tcp on 10.10.11.125
+Increasing send delay for 10.10.11.125 from 0 to 5 due to 64 out of 159 dropped probes since last increase.
+Increasing send delay for 10.10.11.125 from 5 to 10 due to 11 out of 18 dropped probes since last increase.
+Connect Scan Timing: About 3.18% done; ETC: 14:10 (0:15:42 remaining)
+Connect Scan Timing: About 7.51% done; ETC: 14:07 (0:12:31 remaining)
+Connect Scan Timing: About 11.37% done; ETC: 14:07 (0:11:49 remaining)
+Connect Scan Timing: About 15.65% done; ETC: 14:07 (0:11:08 remaining)
+Connect Scan Timing: About 20.63% done; ETC: 14:07 (0:10:27 remaining)
+Connect Scan Timing: About 25.09% done; ETC: 14:06 (0:09:45 remaining)
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-04-26 14:11 CDT
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 14:11
+Completed NSE at 14:11, 0.00s elapsed
+Initiating NSE at 14:11
+Completed NSE at 14:11, 0.00s elapsed
+Initiating NSE at 14:11
+Completed NSE at 14:11, 0.00s elapsed
+Initiating Ping Scan at 14:11
+Scanning 10.10.11.125 [2 ports]
+Completed Ping Scan at 14:11, 0.09s elapsed (1 total hosts)
+Initiating Connect Scan at 14:11
+Scanning backdoor.htb (10.10.11.125) [3000 ports]
+Discovered open port 80/tcp on 10.10.11.125
+Discovered open port 22/tcp on 10.10.11.125
+Increasing send delay for 10.10.11.125 from 0 to 5 due to max_successful_tryno increase to 5
+Discovered open port 1337/tcp on 10.10.11.125
+Completed Connect Scan at 14:12, 53.71s elapsed (3000 total ports)
+Initiating Service scan at 14:12
+Scanning 3 services on backdoor.htb (10.10.11.125)
+Completed Service scan at 14:15, 147.27s elapsed (3 services on 1 host)
+NSE: Script scanning 10.10.11.125.
+Initiating NSE at 14:15
+Completed NSE at 14:15, 14.51s elapsed
+Initiating NSE at 14:15
+Completed NSE at 14:15, 1.26s elapsed
+Initiating NSE at 14:15
+Completed NSE at 14:15, 0.00s elapsed
+Nmap scan report for backdoor.htb (10.10.11.125)
+Host is up (0.22s latency).
+Not shown: 2997 closed tcp ports (conn-refused)
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 b4:de:43:38:46:57:db:4c:21:3b:69:f3:db:3c:62:88 (RSA)
+|   256 aa:c9:fc:21:0f:3e:f4:ec:6b:35:70:26:22:53:ef:66 (ECDSA)
+|_  256 d2:8b:e4:ec:07:61:aa:ca:f8:ec:1c:f8:8c:c1:f6:e1 (ED25519)
+80/tcp   open  http    Apache httpd 2.4.41 ((Ubuntu))
+|_http-title: Backdoor &#8211; Real-Life
+|_http-generator: WordPress 5.8.1
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+1337/tcp open  waste?
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+Initiating NSE at 14:15
+Completed NSE at 14:15, 0.00s elapsed
+Initiating NSE at 14:15
+Completed NSE at 14:15, 0.00s elapsed
+Initiating NSE at 14:15
+Completed NSE at 14:15, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 217.50 seconds
